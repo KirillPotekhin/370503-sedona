@@ -1,6 +1,6 @@
 ﻿# Личный проект «Седона»
 
-* Студент: [Кирилл Потехин.](https://up.htmlacademy.ru/htmlcss/17/user/370503).
+* Студент: [Кирилл Потехин](https://up.htmlacademy.ru/htmlcss/17/user/370503).
 * Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/17/user/70260).
 
 ---
