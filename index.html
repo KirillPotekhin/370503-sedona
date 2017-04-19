@@ -12,26 +12,26 @@
     </a>
     <nav class="main-navigation">
       <ul class="main-navigation-list">
-        <li class="main-navigation-left">
-          <a class="main-navigation-info" href="#">Информация</a>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link main-navigation-active" href="#">Информация</a>
         </li>
-        <li class="main-navigation-left">
-          <a class="main-navigation-figure" href="#">Фото и видое</a>
+        <li class="main-navigation-list">
+          <a class="main-navigation-link main-navigation-active" href="#">Фото и видое</a>
         </li>
-        <li class="main-navigation-right">
-          <a class="main-navigation-map" href="#">Карта штата</a>
+        <li class="main-navigation-list">
+          <a class="main-navigation-link main-navigation-active" href="#">Карта штата</a>
         </li>
-        <li class="main-navigation-right">
-          <a class="main-navigation-hotel" href="#">Гостиницы</a>
+        <li class="main-navigation-list">
+          <a class="main-navigation-link main-navigation-active" href="#">Гостиницы</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 <main class="container">
-  <div>
-    <img class="greeting" src="img/main-logo.png" alt="Добро пожаловать в Седону">
-  </div>
+  <figure class="greeting">
+    <img class="greeting-img" src="img/greeting-img.png" alt="Добро пожаловать в Седону">
+  </figure>
   <div class="main-cause">
     <h2 class="main-cause-entry">
       Седона - небольшой городок в Аризоне, заслуживающий большего!
@@ -52,13 +52,15 @@
         Седона - не аттракцион для туристов, там течет своя жизнь
       </p>
     </section>
-    <div class="card-img">
+    <figure class="card-img">
       <img class="real-city" src="img/real-city.png" alt="Настоящий городок">
-    </div>
+    </figure>
   </div>
   <div class="cause-comfort">
     <div class="house">
-      <img class="house-img" src="img/house-img.png" alt="Дом"><br>
+      <figure class="house-figure">
+        <img class="house-figure-img" src="img/house-figure-img.png" alt="Дом">
+      </figure>
       <b class="house-title">
         Жилье
       </b><br>
@@ -67,7 +69,9 @@
       </p>
     </div>
     <div class="food">
-      <img class="food-img" src="img/food-img.png" alt="Бургер"><br>
+      <figure class="food-figure">
+        <img class="food-figure-img" src="img/food-figure-img.png" alt="Бургер">
+      </figure>
       <b class="food-title">
         Еда
       </b><br>
@@ -76,7 +80,9 @@
       </p>
     </div>
     <div class="gift">
-      <img class="gift-img" src="img/gift-img.png" alt="Коробка с бантиком"><br>
+      <figure class="gift-figure">
+        <img class="gift-figure-img" src="img/gift-figure-img.png" alt="Коробка с бантиком">
+      </figure>
       <b class="gift-title">
         Сувениры
       </b><br>
@@ -149,32 +155,32 @@
         <fieldset class="arrival">
           <label class="arrival-title" for="arrival-input">Дата заезда:</label>
           <input class="arrival-date" id="arrival-input" type="text" name="arrival-date">
-          <span>
-            <img class="calendar" src="img/calendar.png" alt="Календарь">
+          <span class="calendar">
+            Календарь
           </span>
         </fieldset>
         <fieldset class="departure">
           <label class="departure-title" for="departure-input">Дата заезда:</label>
           <input class="departure-date" id="departure-input" type="text" name="departure-date">
-          <span>
-            <img class="calendar" src="img/calendar.png" alt="Календарь">
+          <span class="calendar">
+            Календарь
           </span>
         </fieldset>
         <fieldset class="people">
           <div class="people-adult">
             <label class="people-adult-title" for="people-adult-input">Взрослые:</label>
             <div class="people-adult-number">
-              <button class="number-less"><img src="images/number-less.png" alt="Меньше"></button>
+              <button class="number-less">Меньше</button>
               <input class="people-adult-item" id="people-adult-input" type="text" name="people-adult-item">
-              <button class="number-more"><img src="images/nomber-more.png" alt="Больше"></button>
+              <button class="number-more">Больше</button>
             </div>
           </div>
           <div class="people-children">
             <label class="people-children-title" for="people-children-input">Дети:</label>
             <div class="people-children-number">
-              <button class="number-less"><img src="images/number-less.png" alt="Меньше"></button>
+              <button class="number-less">Меньше</button>
               <input class="people-children-item" id="people-children-input" type="text" name="people-children-item">
-              <button class="number-more"><img src="images/nomber-more.png" alt="Больше"></button>
+              <button class="number-more">Больше</button>
             </div>
           </div>
         </fieldset>
@@ -182,9 +188,9 @@
       </form>
     </div>
   </div>
-  <div class="map">
+  <figure class="map">
     <img class="map-img" src="img/map-img.png" alt="Карта">
-  </div>
+  </figure>
 </main>
 <footer class="main-footer">
   <div class="container">
