@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header class="main-header">
+  <div class="container">
+    <a class="main-logo" href="index.html">
+      <img class="main-logo-img" src="img/main-logo.png" alt="Седона">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
+        <li class="main-navigation-left">
+          <a class="main-navigation-info" href="#">Информация</a>
+        </li>
+        <li class="main-navigation-left">
+          <a class="main-navigation-figure" href="#">Фото и видое</a>
+        </li>
+        <li class="main-navigation-right">
+          <a class="main-navigation-map" href="#">Карта штата</a>
+        </li>
+        <li class="main-navigation-right">
+          <a class="main-navigation-hotel" href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <div>
+    <img class="greeting" src="img/main-logo.png" alt="Добро пожаловать в Седону">
+  </div>
+  <div class="main-cause">
+    <h2 class="main-cause-entry">
+      Седона - небольшой городок в Аризоне, заслуживающий большего!
+    </h2>
+    <p class="main-cause-item">
+      Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+    </p>
+  </div>
+  <div class="cause">
+    <section class="card left">
+      <h2 class="card-title">
+        Настоящий городок
+      </h2>
+      <span class="card-namber">
+        - №1 -
+      </span>
+      <p class="card-designation">
+        Седона - не аттракцион для туристов, там течет своя жизнь
+      </p>
+    </section>
+    <div class="card-img">
+      <img class="real-city" src="img/real-city.png" alt="Настоящий городок">
+    </div>
+  </div>
+  <div class="cause-comfort">
+    <div class="house">
+      <img class="house-img" src="img/house-img.png" alt="Дом"><br>
+      <b class="house-title">
+        Жилье
+      </b><br>
+      <p class="house-offer">
+        Рекомендуем пожить в настоящем мотеле, все как в кино!
+      </p>
+    </div>
+    <div class="food">
+      <img class="food-img" src="img/food-img.png" alt="Бургер"><br>
+      <b class="food-title">
+        Еда
+      </b><br>
+      <p class="food-offer">
+        Всешда заказывайте фирменный бургер, вы не разочаруетесь!
+      </p>
+    </div>
+    <div class="gift">
+      <img class="gift-img" src="img/gift-img.png" alt="Коробка с бантиком"><br>
+      <b class="gift-title">
+        Сувениры
+      </b><br>
+      <p class="gift-offer">
+        Не только китайского, но и местного производства!
+      </p>
+    </div>
+  </div>
+  <div class="cause">
+    <section class="card right">
+      <h2 class="card-title">
+        Там есть мост дьявола
+      </h2>
+      <span class="card-namber">
+        - №2 -
+      </span>
+      <p class="card-designation">
+        Да, по нему можно пройти! Если конечно вы осмелитесь
+      </p>
+    </section>
+    <div class="card-img">
+      <img class="bridge" src="img/bridge.png" alt="Мост">
+    </div>
+  </div>
+  <div class="cause">
+    <section class="card">
+      <h2 class="card-title">
+        Небольшая площадь
+      </h2>
+      <span class="card-namber">
+        - №3 -
+      </span>
+      <p class="card-designation">
+        Все достопримечательности находятся очень близко
+      </p>
+    </section>
+    <section class="card">
+      <h2 class="card-title">
+        Красивая дорога
+      </h2>
+      <span class="card-namber">
+        - №4 -
+      </span>
+      <p class="card-designation">
+        Ехать в Седону из Лас-Вегаса совсем не скучно!
+      </p>
+    </section>
+    <section class="card">
+      <h2 class="card-title">
+        Мало туристов
+      </h2>
+      <span class="card-namber">
+        - №5 -
+      </span>
+      <p class="card-designation">
+        Большинство едет в Гранд Каньон и толпится там
+      </p>
+    </section>
+  </div>
+  <div class="interest">
+    <b class="interest-title">
+      Заинтересовались?
+    </b>
+    <p class="interest-designation">
+      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+    </p>
+    <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
+    <div class="hotel-reservation">
+      <form>
+        <fieldset class="arrival">
+          <label class="arrival-title" for="arrival-input">Дата заезда:</label>
+          <input class="arrival-date" id="arrival-input" type="text" name="arrival-date">
+          <span>
+            <img class="calendar" src="img/calendar.png" alt="Календарь">
+          </span>
+        </fieldset>
+        <fieldset class="departure">
+          <label class="departure-title" for="departure-input">Дата заезда:</label>
+          <input class="departure-date" id="departure-input" type="text" name="departure-date">
+          <span>
+            <img class="calendar" src="img/calendar.png" alt="Календарь">
+          </span>
+        </fieldset>
+        <fieldset class="people">
+          <div class="people-adult">
+            <label class="people-adult-title" for="people-adult-input">Взрослые:</label>
+            <div class="people-adult-number">
+              <button class="number-less"><img src="images/number-less.png" alt="Меньше"></button>
+              <input class="people-adult-item" id="people-adult-input" type="text" name="people-adult-item">
+              <button class="number-more"><img src="images/nomber-more.png" alt="Больше"></button>
+            </div>
+          </div>
+          <div class="people-children">
+            <label class="people-children-title" for="people-children-input">Дети:</label>
+            <div class="people-children-number">
+              <button class="number-less"><img src="images/number-less.png" alt="Меньше"></button>
+              <input class="people-children-item" id="people-children-input" type="text" name="people-children-item">
+              <button class="number-more"><img src="images/nomber-more.png" alt="Больше"></button>
+            </div>
+          </div>
+        </fieldset>
+        <input class="search-btn btn" type="submit" value="Найти">
+      </form>
+    </div>
+  </div>
+  <div class="map">
+    <img class="map-img" src="img/map-img.png" alt="Карта">
+  </div>
+</main>
+<footer class="main-footer">
+  <div class="container">
+    <section class="footer-hashtag">
+      <b style="hashtag">
+        #visitsedona
+      </b>
+    </section>
+    <section class="footer-social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="footer-copyright">
+      <span class="copyright">website by</span>
+      <a class="logo-master" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo-master-img" src="img/logo-master-img.png" alt="HTML Academy">
+      </a>
+    </section>
+  </div>
+</footer>
+</body>
 </html>
