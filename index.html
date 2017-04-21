@@ -44,7 +44,7 @@
         <h2 class="card-title">
           Настоящий городок
         </h2>
-        <section class="card-namber">
+        <section class="card-number">
           - №1 -
         </section>
         <p class="card-designation">
@@ -56,36 +56,27 @@
       </figure>
     </div>
     <div class="cause-comfort">
-      <div class="house">
-        <figure class="house-figure">
-          <img class="house-figure-img" src="img/house-figure-img.png" alt="Дом">
-        </figure>
-        <b class="house-title">
+      <div class="cause-comfort-item">
+        <h2 class="cause-comfort-title">
           Жилье
-        </b><br>
-        <p class="house-offer">
+        </h2>
+        <p class="cause-comfort-offer">
           Рекомендуем пожить в настоящем мотеле, все как в кино!
         </p>
       </div>
-      <div class="food">
-        <figure class="food-figure">
-          <img class="food-figure-img" src="img/food-figure-img.png" alt="Бургер">
-        </figure>
-        <b class="food-title">
+      <div class="cause-comfort-item">
+        <h2 class="cause-comfort-title">
           Еда
-        </b><br>
-        <p class="food-offer">
+        </h2>
+        <p class="cause-comfort-offer">
           Всешда заказывайте фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
-      <div class="gift">
-        <figure class="gift-figure">
-          <img class="gift-figure-img" src="img/gift-figure-img.png" alt="Коробка с бантиком">
-        </figure>
-        <b class="gift-title">
+      <div class="cause-comfort-item">
+        <h2 class="cause-comfort-title">
           Сувениры
-        </b><br>
-        <p class="gift-offer">
+        </h2>
+        <p class="cause-comfort-offer">
           Не только китайского, но и местного производства!
         </p>
       </div>
@@ -95,9 +86,9 @@
         <h2 class="card-title">
           Там есть мост дьявола
         </h2>
-        <span class="card-namber">
+        <section class="card-number">
         - №2 -
-      </span>
+      </section>
         <p class="card-designation">
           Да, по нему можно пройти! Если конечно вы осмелитесь
         </p>
@@ -111,9 +102,9 @@
         <h2 class="card-title">
           Небольшая площадь
         </h2>
-        <span class="card-namber">
+        <section class="card-number">
         - №3 -
-      </span>
+      </section>
         <p class="card-designation">
           Все достопримечательности находятся очень близко
         </p>
@@ -122,9 +113,9 @@
         <h2 class="card-title">
           Красивая дорога
         </h2>
-        <span class="card-namber">
+        <section class="card-number">
         - №4 -
-      </span>
+      </section>
         <p class="card-designation">
           Ехать в Седону из Лас-Вегаса совсем не скучно!
         </p>
@@ -133,53 +124,53 @@
         <h2 class="card-title">
           Мало туристов
         </h2>
-        <span class="card-namber">
+        <section class="card-number">
         - №5 -
-      </span>
+      </section>
         <p class="card-designation">
           Большинство едет в Гранд Каньон и толпится там
         </p>
       </section>
     </div>
     <div class="interest">
-      <b class="interest-title">
+      <h2 class="interest-title">
         Заинтересовались?
-      </b>
+      </h2>
       <p class="interest-designation">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
       <div class="hotel-reservation">
         <form>
-          <fieldset class="arrival">
-            <label class="arrival-title" for="arrival-input">Дата заезда:</label>
-            <input class="arrival-date" id="arrival-input" type="text" name="arrival-date">
+          <fieldset class="reservation-block">
+            <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
+            <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
             <span class="calendar">
             Календарь
-          </span>
+            </span>
           </fieldset>
-          <fieldset class="departure">
-            <label class="departure-title" for="departure-input">Дата заезда:</label>
-            <input class="departure-date" id="departure-input" type="text" name="departure-date">
+          <fieldset class="reservation-block">
+            <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
+            <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
             <span class="calendar">
             Календарь
-          </span>
+            </span>
           </fieldset>
-          <fieldset class="people">
-            <div class="people-adult">
-              <label class="people-adult-title" for="people-adult-input">Взрослые:</label>
-              <div class="people-adult-number">
-                <button class="number-less">Меньше</button>
-                <input class="people-adult-item" id="people-adult-input" type="text" name="people-adult-item">
-                <button class="number-more">Больше</button>
+          <fieldset class="reservation-block">
+            <div class="people">
+              <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
+              <div class="people-number">
+                <button class="number-less" type="button">Меньше</button>
+                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
+                <button class="number-more" type="button">Больше</button>
               </div>
             </div>
-            <div class="people-children">
-              <label class="people-children-title" for="people-children-input">Дети:</label>
-              <div class="people-children-number">
-                <button class="number-less">Меньше</button>
-                <input class="people-children-item" id="people-children-input" type="text" name="people-children-item">
-                <button class="number-more">Больше</button>
+            <div class="people">
+              <label class="reservation-block-title" for="people-children-input">Дети:</label>
+              <div class="people-number">
+                <button class="number-less" type="button">Меньше</button>
+                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
+                <button class="number-more" type="button">Больше</button>
               </div>
             </div>
           </fieldset>
@@ -192,24 +183,20 @@
     </figure>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <section class="footer-hashtag">
-        <b style="hashtag">
-          #visitsedona
-        </b>
-      </section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-copyright">
-        <span class="copyright">website by</span>
-        <a class="logo-master" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="logo-master-img" src="img/logo-master-img.png" alt="HTML Academy">
-        </a>
-      </section>
-    </div>
+    <section class="footer-hashtag">
+      #visitsedona
+    </section>
+    <section class="footer-social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="footer-copyright">
+      website by
+      <a class="logo-master" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo-master-img" src="img/logo-master-img.png" alt="HTML Academy">
+      </a>
+    </section>
   </footer>
 </div>
 </body>
