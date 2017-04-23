@@ -44,9 +44,9 @@
         <h2 class="card-title">
           Настоящий городок
         </h2>
-        <section class="card-number">
+        <div class="card-number">
           - №1 -
-        </section>
+        </div>
         <p class="card-designation">
           Седона - не аттракцион для туристов, там течет своя жизнь
         </p>
@@ -86,9 +86,9 @@
         <h2 class="card-title">
           Там есть мост дьявола
         </h2>
-        <section class="card-number">
-        - №2 -
-      </section>
+        <div class="card-number">
+          - №2 -
+        </div>
         <p class="card-designation">
           Да, по нему можно пройти! Если конечно вы осмелитесь
         </p>
@@ -102,9 +102,9 @@
         <h2 class="card-title">
           Небольшая площадь
         </h2>
-        <section class="card-number">
-        - №3 -
-      </section>
+        <div class="card-number">
+          - №3 -
+        </div>
         <p class="card-designation">
           Все достопримечательности находятся очень близко
         </p>
@@ -113,9 +113,9 @@
         <h2 class="card-title">
           Красивая дорога
         </h2>
-        <section class="card-number">
-        - №4 -
-      </section>
+        <div class="card-number">
+          - №4 -
+        </div>
         <p class="card-designation">
           Ехать в Седону из Лас-Вегаса совсем не скучно!
         </p>
@@ -124,9 +124,9 @@
         <h2 class="card-title">
           Мало туристов
         </h2>
-        <section class="card-number">
-        - №5 -
-      </section>
+        <div class="card-number">
+          - №5 -
+        </div>
         <p class="card-designation">
           Большинство едет в Гранд Каньон и толпится там
         </p>
@@ -144,17 +144,21 @@
         <form>
           <fieldset class="reservation-block">
             <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
-            <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
-            <span class="calendar">
-            Календарь
-            </span>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
+              <span class="calendar">
+                Календарь
+              </span>
+            </div>
           </fieldset>
           <fieldset class="reservation-block">
             <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
-            <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
-            <span class="calendar">
-            Календарь
-            </span>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
+              <span class="calendar">
+                Календарь
+              </span>
+            </div>
           </fieldset>
           <fieldset class="reservation-block">
             <div class="people">
