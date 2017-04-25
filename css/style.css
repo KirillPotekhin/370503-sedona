@@ -4,10 +4,37 @@ body {
   color: #000000;
   font-weight: normal;
   line-height: 21px;
-  text-align: center;
 }
 .container {
-
+}
+.main-navigation-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  line-height: 26px;
+}
+.selection {
+  background: url("../img/filter-background.jpg") no-repeat;
+}
+.selection-fieldset {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+.selection-fieldset-legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.main-navigation-active {
+  color: #766357;
 }
 .main-cause {
   line-height: 21px;
@@ -17,6 +44,57 @@ h2 {
   color: #000000;
   font-weight: bold;
   line-height: 21px;
+  text-transform: uppercase;
+}
+h2.found {
+  line-height: 26px;
+}
+.search-info-item {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-link{
+  text-decoration: none;
+  border-bottom: 1px dashed #0088CC;
+  opacity: 0.3;
+  filter: alpha(opacity=50) /*для ie*/
+}
+.sorting-active {
+  text-decoration: none;
+  border-bottom: none;
+  color: #0088CC;
+  opacity: 1;
+}
+.sorting-item-up {
+  background-image: url("../img/sorting-item-up.png") no-repeat;
+}
+.sorting-item-down {
+  background-image: url("../img/sorting-item-down.png") no-repeat;
+}
+.results {
+  text-transform: uppercase;
+}
+.itfo-title-link {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: none;
+}
+.btn {
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #ffffff;
+  line-height: 21px;
+}
+.btn-color {
+  background-color: #766357;
+}
+.rating-block {
+  background-color: #f2f2f2;
+  color: #666666;
+}
+.star { /*В пустом блоке не показывает фон */
+  background: url("../img/star.png") no-repeat 0 0;
 }
 .cause {
   font-size: 14px;
