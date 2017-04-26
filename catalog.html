@@ -31,54 +31,60 @@
   <main class="main-content">
     <form class="selection">
       <fieldset class="selection-fieldset">
-        <legend class="selection-fieldset-legend">Инфраструктура:</legend>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-pool" type="checkbox" name="pool" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-pool">Бассейн</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-parking" type="checkbox" name="parking">
-          <label class="selection-fieldset-label" for="selection-checkbox-parking">Парковка</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-wifi" type="checkbox" name="wifi">
-          <label class="selection-fieldset-label" for="selection-checkbox-wifi">Wi-fi</label>
+        <div class="selection-flex-1">
+          <legend class="selection-fieldset-legend">Инфраструктура:</legend>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-pool" type="checkbox" name="pool" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-pool">Бассейн</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-parking" type="checkbox" name="parking">
+            <label class="selection-fieldset-label" for="selection-checkbox-parking">Парковка</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-wifi" type="checkbox" name="wifi">
+            <label class="selection-fieldset-label" for="selection-checkbox-wifi">Wi-fi</label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="selection-fieldset">
-        <legend class="selection-fieldset-legend">Тип жилья:</legend>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-hotel" type="checkbox" name="hotel" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-hotel">Гостиница</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-motel" type="checkbox" name="motel" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-motel">Мотель</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-apartments" type="checkbox" name="apartments" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-apartments">Апартаменты</label>
+        <div class="selection-flex-2">
+          <legend class="selection-fieldset-legend">Тип жилья:</legend>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-hotel" type="checkbox" name="hotel" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-hotel">Гостиница</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-motel" type="checkbox" name="motel" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-motel">Мотель</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-apartments" type="checkbox" name="apartments" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-apartments">Апартаменты</label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="selection-fieldset">
-        <legend class="selection-fieldset-legend">Стоимость в сутки (р):</legend>
-        <div class="selection-fieldset-block">
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-starting-price">От</label>
-            <input class="selection-checkbox" id="selection-starting-price" type="text" name="start">
+        <div class="selection-flex-3">
+          <legend class="selection-fieldset-legend">Стоимость в сутки (р):</legend>
+          <div class="selection-fieldset-block">
+            <div class="selection-fieldset-price">
+              <label class="selection-fieldset-label" for="selection-starting-price">От</label>
+              <input class="selection-checkbox" id="selection-starting-price" type="text" name="start">
+            </div>
+            <div class="selection-fieldset-price">
+              <label class="selection-fieldset-label" for="selection-final-price">До</label>
+              <input class="selection-checkbox" id="selection-final-price" type="text" name="final">
+            </div>
           </div>
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-final-price">До</label>
-            <input class="selection-checkbox" id="selection-final-price" type="text" name="final">
+          <div class="selection-fieldset-range">
+            <div class="toggle-min"></div>
+            <div class="scale-in"></div>
+            <div class="toggle-max"></div>
+            <div class="scale-out"></div>
           </div>
+          <input class="selection-btn btn" type="submit" value="Показать">
         </div>
-        <div class="selection-fieldset-range">
-          <div class="toggle-min"></div>
-          <div class="scale-in"></div>
-          <div class="toggle-max"></div>
-          <div class="scale-out"></div>
-        </div>
-        <input class="selection-btn btn" type="submit" value="Показать">
       </fieldset>
     </form>
     <div class="search-info">

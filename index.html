@@ -9,7 +9,7 @@
 <div class="container">
   <header class="main-header">
     <a class="main-logo" href="index.html">
-      <img class="main-logo-img" src="img/main-logo.png" alt="Седона">
+      <img class="main-logo-img" src="img/main-logo.png" alt="Седона" width="138" height="70">
     </a>
     <nav class="main-navigation">
       <ul class="main-navigation-list">
@@ -41,7 +41,7 @@
       </p>
     </div>
     <div class="cause cause-background-color">
-      <section class="card left">
+      <section class="card">
         <h2 class="card-title">
           Настоящий городок
         </h2>
@@ -53,7 +53,8 @@
         </p>
       </section>
       <figure class="card-img">
-        <img class="real-city" src="img/real-city.jpg" alt="Настоящий городок">
+        <img class="real-city" src="img/real-city.jpg" alt="Настоящий городок"
+        width="800" height="256">
       </figure>
     </div>
     <div class="cause-comfort">
@@ -95,12 +96,12 @@
         </p>
       </section>
       <div class="card-img">
-        <img class="bridge" src="img/bridge.jpg" alt="Мост">
+        <img class="bridge" src="img/bridge.jpg" alt="Мост" width="800" height="256">
       </div>
     </div>
     <div class="cause">
       <section class="card">
-        <h2 class="card-title">
+        <h2 class="card-title card-title-color">
           Небольшая площадь
         </h2>
         <div class="card-number">
@@ -111,7 +112,7 @@
         </p>
       </section>
       <section class="card">
-        <h2 class="card-title">
+        <h2 class="card-title card-title-color">
           Красивая дорога
         </h2>
         <div class="card-number">
@@ -122,7 +123,7 @@
         </p>
       </section>
       <section class="card">
-        <h2 class="card-title">
+        <h2 class="card-title card-title-color">
           Мало туристов
         </h2>
         <div class="card-number">
@@ -142,40 +143,46 @@
       </p>
       <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
       <div class="hotel-reservation">
-        <form>
+        <form class="hotel-reservation-form">
           <fieldset class="reservation-block">
-            <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
-            <div class="reservation-block-date">
-              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
-              <span class="calendar">
+            <div class="reservation-block-flex">
+              <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
+              <div class="reservation-block-date">
+                <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
+                <span class="calendar">
                 Календарь
               </span>
-            </div>
-          </fieldset>
-          <fieldset class="reservation-block">
-            <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
-            <div class="reservation-block-date">
-              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
-              <span class="calendar">
-                Календарь
-              </span>
-            </div>
-          </fieldset>
-          <fieldset class="reservation-block">
-            <div class="people">
-              <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
-              <div class="people-number">
-                <button class="number-less" type="button">Меньше</button>
-                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
-                <button class="number-more" type="button">Больше</button>
               </div>
             </div>
-            <div class="people">
-              <label class="reservation-block-title" for="people-children-input">Дети:</label>
-              <div class="people-number">
-                <button class="number-less" type="button">Меньше</button>
-                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
-                <button class="number-more" type="button">Больше</button>
+          </fieldset>
+          <fieldset class="reservation-block">
+            <div class="reservation-block-flex">
+              <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
+              <div class="reservation-block-date">
+                <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
+                <span class="calendar">
+                Календарь
+              </span>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="reservation-block">
+            <div class="reservation-block-flex">
+              <div class="people">
+                <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
+                <div class="people-number">
+                  <button class="number-less" type="button">Меньше</button>
+                  <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
+                  <button class="number-more" type="button">Больше</button>
+                </div>
+              </div>
+              <div class="people">
+                <label class="reservation-block-title" for="people-children-input">Дети:</label>
+                <div class="people-number">
+                  <button class="number-less" type="button">Меньше</button>
+                  <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
+                  <button class="number-more" type="button">Больше</button>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -199,7 +206,7 @@
     <section class="footer-copyright">
       website by
       <a class="logo-master" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="logo-master-img" src="img/logo-master-img.png" alt="HTML Academy">
+        <img class="logo-master-img" src="img/logo-master-img.png" alt="HTML Academy" width="113" height="39">
       </a>
     </section>
   </footer>
