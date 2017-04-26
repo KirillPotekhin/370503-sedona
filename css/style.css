@@ -1,0 +1,370 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.greeting {
+  margin: 0;
+}
+
+.main-logo { /*Над этим еще надо поработать*/
+  display: flex;
+  justify-content: center;
+}
+
+.main-navigation-list { /*Над этим еще надо поработать*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-navigation-link {
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-cause {
+  display: flex;
+  padding: 62px 355px 51px 355px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-cause-entry {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-cause-item {
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.card-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.card-img {
+  margin: 0;
+}
+
+.card {
+  width: 400px;
+  margin-left: 47px;
+  margin-right: 49px;
+  padding-top: 47px;
+  padding-bottom: 61px;
+  text-align: center;
+}
+
+.card-title {
+  margin: 0;
+  padding-left: 94px;
+  padding-right: 92px;
+}
+
+.card-number {
+  margin: 0;
+  padding-top: 1.72em;
+  padding-bottom: 1.86em;
+}
+
+.card-designation{
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 12px;
+  text-transform: uppercase;
+}
+
+.cause-comfort {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cause {
+  display: flex;
+  height: 256px;
+  font-size: 14px;
+  background-color: #eeeeee;
+}
+
+.cause-background-color {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.cause-comfort-title {
+  margin: 0;
+  padding-top: 7.77em;
+  padding-bottom: 1.19em;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.cause-comfort-offer {
+  margin: 0;
+  padding-bottom: 6.08em;
+}
+
+.card-title-color {
+  color: #000000;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 316px;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.interest-title {
+  margin: 0;
+  padding-top: 1.8em;
+  padding-bottom: 0.9em;
+  font-size: 30px;
+}
+
+.interest-designation {
+  margin: 0;
+  padding-bottom: 52px;
+}
+
+.hotel-search {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  font-size: 21px;
+  text-align: center;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #766357;
+}
+
+.reservation-block {
+  border: none;
+}
+
+.reservation-block-flex {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+.reservation-block-title {
+  margin: 0;
+  padding-left: 55px;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.reservation-block-date {
+  margin: 0;
+  padding-right: 55px;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.reservation-block-date {
+  padding: 15px 18px;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 150px;
+  text-align: center;
+
+  padding-top: 0.86em;
+  padding-bottom: 0.77em;
+  font-size: 21px;
+  text-align: center;
+  line-height: 26px;
+  border: none;
+}
+
+.map {
+  margin: 0;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  margin-top: -120px;
+  padding-top: 50px;
+  background: url("../img/footer.png") no-repeat;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-navigation-item {
+  list-style-type: none;
+}
+
+.main-navigation-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.main-navigation-active {
+  color: #766357;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+  background: url("../img/filter-background.jpg") no-repeat;
+}
+
+.selection-fieldset {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.selection-fieldset-legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*.selection-flex-1 {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*margin: 0 0 0 71px;*/
+  /*padding: 0;*/
+/*}*/
+
+/*.selection-flex-2 {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*margin: 0 0 0 71px;*/
+  /*padding: 0;*/
+/*}*/
+
+/*.selection-flex-3 {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: flex-end;*/
+  /*margin: 0 0 0 71px;*/
+  /*padding: 0;*/
+/*}*/
+/*.search-info {*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*flex-direction: row;*/
+/*}*/
+
+/*.sorting-list {*/
+  /*display: flex;*/
+/*}*/
+}
+
+.found {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+/*.search-info {*/
+  /*font-size: 111px;*/
+/*}*/
+.result-info-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.search-info-item {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-link{
+  text-decoration: none;
+  border-bottom: 1px dashed #0088CC;
+  opacity: 0.3;
+}
+
+.sorting-active {
+  color: #0088CC;
+  text-decoration: none;
+  border-bottom: none;
+  opacity: 1;
+}
+
+.sorting-item-up {
+  background-image: url("../img/sorting-item-up.png") no-repeat;
+}
+
+.sorting-item-down {
+  background-image: url("../img/sorting-item-down.png") no-repeat;
+}
+
+.results {
+  text-transform: uppercase;
+}
+
+.itfo-title-link {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.btn {
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #81b3d2;
+}
+
+.btn-color {
+  background-color: #766357;
+}
+
+.rating-block {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.star { /*В пустом блоке не показывает фон */
+  background: url("../img/star.png") no-repeat 0 0;
+}
+
+.last-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  padding-top: 50px;
+  background-color: #fefefe;
