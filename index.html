@@ -35,7 +35,7 @@
     </figure>
     <div class="main-cause">
       <h2 class="main-cause-entry">
-        Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
+        Седона - небольшой городок в Аризоне, заслуживающий большего!
       </h2>
       <p class="main-cause-item">
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -47,10 +47,10 @@
           Настоящий городок
         </h2>
         <div class="card-number">
-          &#8212; №1 &#8212;
+          - №1 -
         </div>
         <p class="card-designation">
-          Седона &#8211; не аттракцион для туристов, там течет своя жизнь
+          Седона - не аттракцион для туристов, там течет своя жизнь
         </p>
       </section>
       <figure class="card-img">
@@ -72,7 +72,7 @@
           Еда
         </h2>
         <p class="cause-comfort-offer">
-          Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          Всешда заказывайте фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
       <div class="cause-comfort-item">
@@ -85,18 +85,18 @@
       </div>
     </div>
     <div class="cause cause-background-color">
-      <section class="card card-option">
+      <section class="card right">
         <h2 class="card-title">
-          Там есть <br> мост дьявола
+          Там есть мост дьявола
         </h2>
         <div class="card-number">
-          &#8212; №2 &#8212;
+          - №2 -
         </div>
-        <p class="card-designation card-designation-option ">
+        <p class="card-designation">
           Да, по нему можно пройти! Если конечно вы осмелитесь
         </p>
       </section>
-      <div class="card-img right">
+      <div class="card-img">
         <img class="bridge" src="img/bridge.jpg" alt="Мост" width="800" height="256">
       </div>
     </div>
@@ -106,7 +106,7 @@
           Небольшая площадь
         </h2>
         <div class="card-number">
-          &#8212; №3 &#8212;
+          - №3 -
         </div>
         <p class="card-designation">
           Все достопримечательности находятся очень близко
@@ -117,7 +117,7 @@
           Красивая дорога
         </h2>
         <div class="card-number">
-          &#8212; №4 &#8212;
+          - №4 -
         </div>
         <p class="card-designation">
           Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -128,7 +128,7 @@
           Мало туристов
         </h2>
         <div class="card-number">
-          &#8212; №5 &#8212;
+          - №5 -
         </div>
         <p class="card-designation">
           Большинство едет в Гранд Каньон и толпится там
@@ -140,47 +140,53 @@
         Заинтересовались?
       </h2>
       <p class="interest-designation">
-        Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
       <div class="hotel-reservation">
         <form class="hotel-reservation-form">
-          <div class="reservation-block-flex">
-            <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
-            <div class="reservation-block-date">
-              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
-              <span class="calendar">
+          <fieldset class="reservation-block">
+            <div class="reservation-block-flex">
+              <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
+              <div class="reservation-block-date">
+                <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
+                <span class="calendar">
                 Календарь
               </span>
+              </div>
             </div>
-          </div>
-          <div class="reservation-block-flex">
-            <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
-            <div class="reservation-block-date">
-              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
-              <span class="calendar">
+          </fieldset>
+          <fieldset class="reservation-block">
+            <div class="reservation-block-flex">
+              <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
+              <div class="reservation-block-date">
+                <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
+                <span class="calendar">
                 Календарь
               </span>
-            </div>
-          </div>
-          <div class="reservation-block-flex">
-            <div class="people">
-              <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
-              <div class="people-number">
-                <button class="number-less" type="button">-</button>
-                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
-                <button class="number-more" type="button">+</button>
               </div>
             </div>
-            <div class="people">
-              <label class="reservation-block-title" for="people-children-input">Дети:</label>
-              <div class="people-number">
-                <button class="number-less" type="button">-</button>
-                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
-                <button class="number-more" type="button">+</button>
+          </fieldset>
+          <fieldset class="reservation-block">
+            <div class="reservation-block-flex">
+              <div class="people">
+                <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
+                <div class="people-number">
+                  <button class="number-less" type="button">Меньше</button>
+                  <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
+                  <button class="number-more" type="button">Больше</button>
+                </div>
+              </div>
+              <div class="people">
+                <label class="reservation-block-title" for="people-children-input">Дети:</label>
+                <div class="people-number">
+                  <button class="number-less" type="button">Меньше</button>
+                  <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
+                  <button class="number-more" type="button">Больше</button>
+                </div>
               </div>
             </div>
-          </div>
+          </fieldset>
           <input class="search-btn btn" type="submit" value="Найти">
         </form>
       </div>

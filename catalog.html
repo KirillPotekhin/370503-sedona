@@ -30,56 +30,62 @@
   </header>
   <main class="main-content">
     <form class="selection">
-      <div class="selection-fieldset">
-        <span class="selection-fieldset-legend">Инфраструктура:</span>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-pool" type="checkbox" name="pool" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-pool">Бассейн</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-parking" type="checkbox" name="parking">
-          <label class="selection-fieldset-label" for="selection-checkbox-parking">Парковка</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-wifi" type="checkbox" name="wifi">
-          <label class="selection-fieldset-label" for="selection-checkbox-wifi">Wi-fi</label>
-        </div>
-      </div>
-      <div class="selection-fieldset">
-        <span class="selection-fieldset-legend">Тип жилья:</span>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-hotel" type="checkbox" name="hotel" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-hotel">Гостиница</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-motel" type="checkbox" name="motel" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-motel">Мотель</label>
-        </div>
-        <div class="selection-fieldset-block">
-          <input class="selection-checkbox" id="selection-checkbox-apartments" type="checkbox" name="apartments" checked>
-          <label class="selection-fieldset-label" for="selection-checkbox-apartments">Апартаменты</label>
-        </div>
-      </div>
-      <div class="selection-fieldset selection-fieldset-option">
-        <span class="selection-fieldset-legend">Стоимость в сутки (р):</span>
-        <div class="selection-fieldset-block">
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-starting-price">От</label>
-            <input class="selection-checkbox" id="selection-starting-price" type="text" name="start">
+      <fieldset class="selection-fieldset">
+        <div class="selection-flex-1">
+          <legend class="selection-fieldset-legend">Инфраструктура:</legend>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-pool" type="checkbox" name="pool" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-pool">Бассейн</label>
           </div>
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-final-price">До</label>
-            <input class="selection-checkbox" id="selection-final-price" type="text" name="final">
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-parking" type="checkbox" name="parking">
+            <label class="selection-fieldset-label" for="selection-checkbox-parking">Парковка</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-wifi" type="checkbox" name="wifi">
+            <label class="selection-fieldset-label" for="selection-checkbox-wifi">Wi-fi</label>
           </div>
         </div>
-        <div class="selection-fieldset-range">
-          <div class="toggle-min"></div>
-          <div class="scale-in"></div>
-          <div class="toggle-max"></div>
-          <div class="scale-out"></div>
+      </fieldset>
+      <fieldset class="selection-fieldset">
+        <div class="selection-flex-2">
+          <legend class="selection-fieldset-legend">Тип жилья:</legend>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-hotel" type="checkbox" name="hotel" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-hotel">Гостиница</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-motel" type="checkbox" name="motel" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-motel">Мотель</label>
+          </div>
+          <div class="selection-fieldset-block">
+            <input class="selection-checkbox" id="selection-checkbox-apartments" type="checkbox" name="apartments" checked>
+            <label class="selection-fieldset-label" for="selection-checkbox-apartments">Апартаменты</label>
+          </div>
         </div>
-        <input class="selection-btn btn" type="submit" value="Показать">
-      </div>
+      </fieldset>
+      <fieldset class="selection-fieldset">
+        <div class="selection-flex-3">
+          <legend class="selection-fieldset-legend">Стоимость в сутки (р):</legend>
+          <div class="selection-fieldset-block">
+            <div class="selection-fieldset-price">
+              <label class="selection-fieldset-label" for="selection-starting-price">От</label>
+              <input class="selection-checkbox" id="selection-starting-price" type="text" name="start">
+            </div>
+            <div class="selection-fieldset-price">
+              <label class="selection-fieldset-label" for="selection-final-price">До</label>
+              <input class="selection-checkbox" id="selection-final-price" type="text" name="final">
+            </div>
+          </div>
+          <div class="selection-fieldset-range">
+            <div class="toggle-min"></div>
+            <div class="scale-in"></div>
+            <div class="toggle-max"></div>
+            <div class="scale-out"></div>
+          </div>
+          <input class="selection-btn btn" type="submit" value="Показать">
+        </div>
+      </fieldset>
     </form>
     <div class="search-info">
       <h2 class="found">
@@ -100,18 +106,18 @@
           </li>
         </ul>
       </div>
-      <ul class="sorting-list left">
-        <li class="sorting-item up">
+      <ul class="sorting-list">
+        <li class="sorting-item">
           <a class="sorting-item-up" href="#">Вверх</a>
         </li>
-        <li class="sorting-item down">
+        <li class="sorting-down">
           <a class="sorting-item-down" href="#">Вниз</a>
         </li>
       </ul>
     </div>
     <section class="results">
       <figure class="results-img">
-        <img class="results-img-place" src="img/results-img-hotel.jpg" alt="Amara Resort & Spa" width="135" height="90">
+        <img class="results-img-hotel" src="img/results-img-hotel.jpg" alt="Amara Resort & Spa">
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
@@ -128,10 +134,10 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
@@ -141,7 +147,7 @@
     </section>
     <section class="results">
       <figure class="results-img">
-        <img class="results-img-place" src="img/results-img-motel.jpg" alt="Desert Quail Inn" width="135" height="90">
+        <img class="results-img-motel" src="img/results-img-motel.jpg" alt="Desert Quail Inn">
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
@@ -158,9 +164,9 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
@@ -170,7 +176,7 @@
     </section>
     <section class="results">
       <figure class="results-img">
-        <img class="results-img-place" src="img/results-img-apartments.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+        <img class="results-img-apartments" src="img/results-img-apartments.jpg" alt="Villas at Poco Diablo">
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
@@ -187,8 +193,8 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
