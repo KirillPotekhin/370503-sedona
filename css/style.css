@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -7,26 +9,42 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .main-header {
-  margin: 0 6%;
+  position: relative;
+  margin: 0;
   padding: 0;
 }
 
 .main-logo { /*Над этим еще надо поработать*/
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: -14px;
+  left: 531px;
+}
+
+.main-navigation-item {
+  list-style-type: none;
+}
+
+.main-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation-list { /*Над этим еще надо поработать*/
   display: flex;
-  margin: 0;
-  padding: 20px 0;
+  margin: 14px 72px 16px 72px;
+  padding: 0;
   justify-content: space-between;
-  align-items: center;
+}
+
+.main-navigation-item {
+  /*margin: 0;*/
+  /*padding: 0;*/
 }
 
 .main-navigation-link {
@@ -38,6 +56,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/*.main-navigation-left {*/
+  /*margin-left: auto;*/
+/*}*/
+
+/*.main-navigation-right {*/
+  /*margin-right: auto;*/
+/*}*/
 
 .greeting {
   margin: 0;
@@ -105,7 +131,7 @@ body {
 }
 
 .card-title {
-  width: 150px;
+  width: 160px;
   margin: 0 auto;
   padding: 0;
   font-size: 21px;
@@ -223,11 +249,22 @@ body {
   background-color: #766357;
 }
 
+.position {
+  position: relative;
+}
+
+.hotel-reservation {
+  position: absolute;
+  left: 316px;
+  /*top: -50px;*/
+}
+
 .hotel-reservation-form {
   width: 568px;
   margin: 0 auto;
   padding: 55px 55px;
   box-sizing: border-box;
+  background: #ffffff;
 }
 
 /*.reservation-block {*/
@@ -312,12 +349,13 @@ body {
 
 .main-footer {
   display: flex;
+  position: relative;
   justify-content: space-around;
   align-items: center;
   height: 120px;
   text-transform: uppercase;
-  margin-top: -120px;
-  background: #000000 url("../img/footer.png") no-repeat;
+  top: -120px;
+  background: url("../img/footer.png") no-repeat;
 }
 
 .footer-hashtag {
@@ -346,14 +384,11 @@ body {
   padding-left: 5px;
 }
 
-.main-navigation-item {
-  list-style-type: none;
-}
 
-.main-navigation-list {
-  margin-left: 0;
-  padding-left: 0;
-}
+/*.main-navigation-list {*/
+  /*margin-left: 0;*/
+  /*padding-left: 0;*/
+/*}*/
 
 .main-navigation-active {
   color: #766357;
