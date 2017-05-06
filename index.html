@@ -14,16 +14,16 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Информация</a>
+          <a class="main-navigation-left" href="#">Информация</a>
+        </li>
+        <li class="main-navigation-item main-navigation-indentation">
+          <a class="main-navigation-left" href="#">Фото и видое</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link main-navigation-left" href="#">Фото и видое</a>
+          <a class="main-navigation-right" href="#">Карта штата</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link main-navigation-right" href="#">Карта штата</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Гостиницы</a>
+          <a class="main-navigation-link main-navigation-righ" href="#">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -142,56 +142,53 @@
       <p class="interest-designation">
         Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <div class="position">
-        <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
-        <div class="hotel-reservation">
-          <form class="hotel-reservation-form">
-            <div class="reservation-block-flex">
-              <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
-              <div class="reservation-block-date">
-                <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
-                <span class="calendar">
+      <a class="hotel-search" href="#">Поиск гостиницы в Седоне</a>
+      <div class="hotel-reservation">
+        <form class="hotel-reservation-form">
+          <div class="reservation-block-flex">
+            <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
+              <span class="calendar">
                 Календарь
               </span>
-              </div>
             </div>
-            <div class="reservation-block-flex">
-              <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
-              <div class="reservation-block-date">
-                <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
-                <span class="calendar">
+          </div>
+          <div class="reservation-block-flex">
+            <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
+            <div class="reservation-block-date">
+              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
+              <span class="calendar">
                 Календарь
               </span>
+            </div>
+          </div>
+          <div class="reservation-block-flex">
+            <div class="people">
+              <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
+              <div class="people-number">
+                <button class="number-less" type="button">-</button>
+                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
+                <button class="number-more" type="button">+</button>
               </div>
             </div>
-            <div class="reservation-block-flex">
-              <div class="people">
-                <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
-                <div class="people-number">
-                  <button class="number-less" type="button">-</button>
-                  <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
-                  <button class="number-more" type="button">+</button>
-                </div>
-              </div>
-              <div class="people">
-                <label class="reservation-block-title" for="people-children-input">Дети:</label>
-                <div class="people-number">
-                  <button class="number-less" type="button">-</button>
-                  <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
-                  <button class="number-more" type="button">+</button>
-                </div>
+            <div class="people">
+              <label class="reservation-block-title" for="people-children-input">Дети:</label>
+              <div class="people-number">
+                <button class="number-less" type="button">-</button>
+                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
+                <button class="number-more" type="button">+</button>
               </div>
             </div>
-            <input class="search-btn btn" type="submit" value="Найти">
-          </form>
-        </div>
+          </div>
+          <input class="search-btn btn" type="submit" value="Найти">
+        </form>
       </div>
-      </div>
+     </div>
     <figure class="map">
-      <img class="map-img" src="img/map.png" alt="Карта">
     </figure>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer-position">
     <section class="footer-hashtag">
       #visitsedona
     </section>

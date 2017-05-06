@@ -14,13 +14,13 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Информация</a>
+          <a class="main-navigation-left" href="#">Информация</a>
+        </li>
+        <li class="main-navigation-item main-navigation-indentation">
+          <a class="main-navigation-left" href="#">Фото и видое</a>
         </li>
         <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Фото и видое</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Карта штата</a>
+          <a class="main-navigation-right" href="#">Карта штата</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link main-navigation-active" href="#">Гостиницы</a>
@@ -65,11 +65,11 @@
         <div class="selection-fieldset-block">
           <div class="selection-fieldset-price">
             <label class="selection-fieldset-label" for="selection-starting-price">От</label>
-            <input class="selection-checkbox" id="selection-starting-price" type="text" name="start">
+            <input class="selection-checkbox-price" id="selection-starting-price" type="text" name="start">
           </div>
           <div class="selection-fieldset-price">
             <label class="selection-fieldset-label" for="selection-final-price">До</label>
-            <input class="selection-checkbox" id="selection-final-price" type="text" name="final">
+            <input class="selection-checkbox-price" id="selection-final-price" type="text" name="final">
           </div>
         </div>
         <div class="selection-fieldset-range">
@@ -87,24 +87,24 @@
         <span class="found-pieces">3</span>
       </h2>
       <div class="search-info-item">
-        Сортировка
+        Сортировка:
         <ul class="sorting-list">
-          <li class="sorting-item">
+          <li class="sorting-item sorting-item-position">
             <a class="sorting-link sorting-active" href="#">По цене</a>
           </li>
-          <li class="sorting-item">
+          <li class="sorting-item sorting-item-position">
             <a class="sorting-link" href="#">По типу</a>
           </li>
-          <li class="sorting-item">
+          <li class="sorting-item sorting-item-position">
             <a class="sorting-link" href="#">По рейтингу</a>
           </li>
         </ul>
       </div>
       <ul class="sorting-list left">
-        <li class="sorting-item up">
+        <li class="sorting-item">
           <a class="sorting-item-up" href="#">Вверх</a>
         </li>
-        <li class="sorting-item down">
+        <li class="sorting-item">
           <a class="sorting-item-down" href="#">Вниз</a>
         </li>
       </ul>
@@ -115,7 +115,7 @@
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
-          <a class="itfo-title-link" href="#">Amara Resort & Spa</a>
+          <a class="info-title-link" href="#">Amara Resort & Spa</a>
         </h2>
         <div class="result-info-left">
           Гостиница
@@ -128,10 +128,10 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
@@ -145,7 +145,7 @@
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
-          <a class="itfo-title-link" href="#">Desert Quail Inn</a>
+          <a class="info-title-link" href="#">Desert Quail Inn</a>
         </h2>
         <div class="result-info-left">
           Мотель
@@ -158,9 +158,9 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
@@ -174,7 +174,7 @@
       </figure>
       <div class="result-info">
         <h2 class="result-info-title">
-          <a class="itfo-title-link" href="#">Villas at Poco Diablo</a>
+          <a class="info-title-link" href="#">Villas at Poco Diablo</a>
         </h2>
         <div class="result-info-left">
           Апартаменты
@@ -187,8 +187,8 @@
       </div>
       <div class="result-info-rating">
         <section class="stars-block">
-          <span class="star">s</span>
-          <span class="star">s</span>
+          <span class="star"></span>
+          <span class="star"></span>
         </section>
         <section class="rating-block">
           Рейтинг:
@@ -197,7 +197,7 @@
       </div>
     </section>
   </main>
-  <footer class="last-footer">
+  <footer class="main-footer">
     <section class="footer-hashtag">
       #visitsedona
     </section>
