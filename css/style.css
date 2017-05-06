@@ -383,7 +383,7 @@ body {
   height: 48px;
   margin: 0;
   padding: 0;
-  font-size: 0px;
+  font-size: 0;
   background: #81b3d2;
   border: none;
 }
@@ -422,8 +422,7 @@ body {
 }
 
 .selection-fieldset-option {
-  margin: 0;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 
@@ -518,8 +517,8 @@ body {
   padding: 0;
   align-items: center;
   font-size: 0;
-  border-left: 5.5px solid transparent;
-  border-right: 5.5px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   border-bottom: 10px solid #81b3d2;
 }
 
@@ -528,8 +527,8 @@ body {
   height: 0;
   align-items: center;
   font-size: 0;
-  border-left: 5.5px solid transparent;
-  border-right: 5.5px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   border-top: 10px solid #81b3d2;
 }
 
@@ -579,8 +578,7 @@ body {
 }
 
 .result-info-rating {
-  margin: 0;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 
@@ -624,7 +622,7 @@ body {
   justify-content: flex-end;
 }
 
-.star { /*В пустом блоке не показывает фон */
+.star {
   width: 17px;
   height: 17px;
   margin-left: 7px;
