@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -59,7 +60,7 @@
       </figure>
     </div>
     <div class="cause-comfort">
-      <div class="cause-comfort-item">
+      <div class="cause-comfort-item cause-comfort-house">
         <h2 class="cause-comfort-title">
           Жилье
         </h2>
@@ -67,7 +68,7 @@
           Рекомендуем пожить в настоящем мотеле, все как в кино!
         </p>
       </div>
-      <div class="cause-comfort-item">
+      <div class="cause-comfort-item cause-comfort-eat">
         <h2 class="cause-comfort-title">
           Еда
         </h2>
@@ -75,7 +76,7 @@
           Всегда заказывайте фирменный бургер, вы не разочаруетесь!
         </p>
       </div>
-      <div class="cause-comfort-item">
+      <div class="cause-comfort-item cause-comfort-gift">
         <h2 class="cause-comfort-title">
           Сувениры
         </h2>
@@ -148,7 +149,7 @@
           <div class="reservation-block-flex">
             <label class="reservation-block-title" for="arrival-input">Дата заезда:</label>
             <div class="reservation-block-date">
-              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date">
+              <input class="reservation-block-item" id="arrival-input" type="text" name="arrival-date" value="24 апреля 2017">
               <span class="calendar">
                 Календарь
               </span>
@@ -157,7 +158,7 @@
           <div class="reservation-block-flex">
             <label class="reservation-block-title" for="departure-input">Дата выезда:</label>
             <div class="reservation-block-date">
-              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date">
+              <input class="reservation-block-item" id="departure-input" type="text" name="departure-date" value="4 июля 2017">
               <span class="calendar">
                 Календарь
               </span>
@@ -167,17 +168,17 @@
             <div class="people">
               <label class="reservation-block-title" for="people-adult-input">Взрослые:</label>
               <div class="people-number">
-                <button class="number-less" type="button">-</button>
-                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item">
-                <button class="number-more" type="button">+</button>
+                <span class="number-less"></span>
+                <input class="reservation-block-item" id="people-adult-input" type="text" name="people-adult-item" value="2">
+                <span class="number-more"></span>
               </div>
             </div>
             <div class="people">
               <label class="reservation-block-title" for="people-children-input">Дети:</label>
               <div class="people-number">
-                <button class="number-less" type="button">-</button>
-                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item">
-                <button class="number-more" type="button">+</button>
+                <span class="number-less"></span>
+                <input class="reservation-block-item" id="people-children-input" type="text" name="people-children-item" value="0">
+                <span class="number-more"></span>
               </div>
             </div>
           </div>
@@ -192,9 +193,9 @@
       #visitsedona
     </section>
     <section class="footer-social">
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-t">Твиттер</a>
       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
     </section>
     <section class="footer-copyright">
       website by
