@@ -579,12 +579,12 @@ body {
 .selection {
   display: flex;
   margin: 0;
-  padding: 27px 72px 30px 72px;
+  padding: 27px 72px 31px 72px;
   background: url("../img/filter-background.jpg") no-repeat;
 }
 
 .selection-fieldset {
-  margin: 0 116px 0 0;
+  margin: 0 118px 0 0;
   padding: 0;
   font-size: 14px;
   color: #ffffff;
@@ -603,12 +603,183 @@ body {
 
 .selection-fieldset-block {
   display: flex;
-  /*width: 316px;*/
-  margin-top: 25px;
+  margin-top: 24px;
+  align-items: center;
 }
 
-.selection-checkbox-price {
-  width: 74px;
+.filter-range-title {
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 66px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 31px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/*.selection-checkbox-price {*/
+  /*width: 74px;*/
+/*}*/
+
+.selection-fieldset-block input[type="checkbox"] {
+  display: none;
+}
+
+.selection-fieldset-block input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 39px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.selection-fieldset-padding input[type="checkbox"] + label {
+  padding-left: 42px;
+}
+
+.selection-fieldset-block input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background: transparent url("../img/sprite.png") no-repeat -413px -85px;
+}
+
+.selection-fieldset-block input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background: transparent url("../img/sprite.png") no-repeat -273px -16px;
+}
+
+.selection-fieldset-level {
+    margin-top: 25px;
+}
+
+.selection-fieldset .selection-fieldset-block:last-child {
+  margin-top: 25px;
 }
 
 .search-info {

@@ -37,7 +37,7 @@
           <input class="selection-checkbox" id="selection-checkbox-pool" type="checkbox" name="pool" checked>
           <label class="selection-fieldset-label" for="selection-checkbox-pool">Бассейн</label>
         </div>
-        <div class="selection-fieldset-block">
+        <div class="selection-fieldset-block selection-fieldset-level">
           <input class="selection-checkbox" id="selection-checkbox-parking" type="checkbox" name="parking">
           <label class="selection-fieldset-label" for="selection-checkbox-parking">Парковка</label>
         </div>
@@ -48,38 +48,33 @@
       </div>
       <div class="selection-fieldset">
         <span class="selection-fieldset-legend">Тип жилья:</span>
-        <div class="selection-fieldset-block">
+        <div class="selection-fieldset-block selection-fieldset-padding">
           <input class="selection-checkbox" id="selection-checkbox-hotel" type="checkbox" name="hotel" checked>
           <label class="selection-fieldset-label" for="selection-checkbox-hotel">Гостиница</label>
         </div>
-        <div class="selection-fieldset-block">
+        <div class="selection-fieldset-block selection-fieldset-padding">
           <input class="selection-checkbox" id="selection-checkbox-motel" type="checkbox" name="motel" checked>
           <label class="selection-fieldset-label" for="selection-checkbox-motel">Мотель</label>
         </div>
-        <div class="selection-fieldset-block">
+        <div class="selection-fieldset-block selection-fieldset-padding">
           <input class="selection-checkbox" id="selection-checkbox-apartments" type="checkbox" name="apartments" checked>
           <label class="selection-fieldset-label" for="selection-checkbox-apartments">Апартаменты</label>
         </div>
       </div>
       <div class="selection-fieldset selection-fieldset-option">
-        <span class="selection-fieldset-legend">Стоимость в сутки (р):</span>
-        <div class="selection-fieldset-block">
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-starting-price">От</label>
-            <input class="selection-checkbox-price" id="selection-starting-price" type="text" name="start">
-          </div>
-          <div class="selection-fieldset-price">
-            <label class="selection-fieldset-label" for="selection-final-price">До</label>
-            <input class="selection-checkbox-price" id="selection-final-price" type="text" name="final">
-          </div>
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
         </div>
-        <div class="selection-fieldset-range">
-          <div class="toggle-min"></div>
-          <div class="scale-in"></div>
-          <div class="toggle-max"></div>
-          <div class="scale-out"></div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
         </div>
-        <input class="selection-btn btn" type="submit" value="Показать">
+        <button class="btn-transparent" type="submit">Показать</button>
       </div>
     </form>
     <div class="search-info">
