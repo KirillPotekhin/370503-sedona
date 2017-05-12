@@ -42,7 +42,7 @@ window.addEventListener("keydown", function(event) {
 function initMap() {
   var ulura = {lat: 34.75924831, lng: -111.7369896};
   var uluru = {lat: 34.8697395, lng: -111.7609896};
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 9,
     center: ulura
   });
